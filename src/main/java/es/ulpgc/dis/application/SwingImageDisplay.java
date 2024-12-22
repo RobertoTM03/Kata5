@@ -28,6 +28,6 @@ public class SwingImageDisplay extends JPanel implements ImageDisplay {
     }
 
     private java.awt.Image deserialize() {
-        return (java.awt.Image) new SwingImageDeserializer().desearilize(image.getContent());
+        return (java.awt.Image) new SwingImageDeserializer().desearilize(image.content());
     }
 }
